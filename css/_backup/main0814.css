@@ -1,0 +1,555 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(carousel.css);
+
+/*====================================================*/
+/*===                   主體樣式                     ==*/
+/*====================================================*/
+
+body {
+  font-family: 'Tt Norms Pro', 'sans-serif';
+}
+
+/* .wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+} */
+
+
+
+/*====================================================*/
+/*===                   section樣式                  ==*/
+/*====================================================*/
+
+section h1{
+  font-size: 2em;
+}
+
+
+section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+/*====================================================*/
+/*===                   feature樣式                  ==*/
+/*====================================================*/
+.sectionFeature {
+  background-color: rgb(255, 255, 255);
+}
+
+.feature {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.feature ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.feature ul li {
+  width: 31%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.feature .imgFit {
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.feature h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing:-0.03em;
+  font-size: 20px;  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.feature p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.feature .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* height: 100%; */
+}
+
+/*====================================================*/
+/*===                   special樣式                  ==*/
+/*====================================================*/
+
+.sectionSpecial{
+  background-color: rgb(245, 246, 246);
+}
+
+.special {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.special ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.special ul li {
+  width: 48%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.special .imgFit {
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+}
+
+.special img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.special h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing:-0.03em;
+  font-size: 20px;  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.special p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.special .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+}
+
+/*====================================================*/
+/*===                   Cover樣式                   ==*/
+/*====================================================*/
+
+/* .cover {
+  background: url(../images/cover/cover-077.jpg)center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+.cover a {
+  text-decoration: none;
+}
+
+.cover .coverOpacity {
+  background-color: #ffffff2a;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cover .coverTextBar {
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.1), rgb(255, 255, 255));
+}
+
+.cover .coverText {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 80px;
+  color: #000;
+}
+
+.cover .coverText h1 {
+  line-height: 2;
+}
+
+.cover .coverText p {
+  font-weight: 700;
+  line-height: 1.3;
+  /* letter-spacing:-0.03em; */
+  font-size: 20px; 
+}
+
+
+/*====================================================*/
+/*===                   Digital樣式                   ==*/
+/*====================================================*/
+.sectionDigital {
+  background-color: rgb(245, 246, 246);
+}
+
+.digital {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.digital ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.digital ul li {
+  width: 31%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.digital .imgFit {
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+}
+
+.digital img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.digital h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing:-0.03em;
+  font-size: 20px;  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.digital p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.digital .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+
+/*====================================================*/
+/*===                   Design樣式                   ==*/
+/*====================================================*/
+.sectionDesign {
+  background-color: rgb(255, 255, 255);
+}
+
+.design {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.design ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.design ul li {
+  width: 48%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.design .imgFit {
+  height: 100%;
+}
+
+.design img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.design h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing:-0.03em;
+  font-size: 20px;  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.design p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.design .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+
+/*====================================================*/
+/*===                   Footer樣式                   ==*/
+/*====================================================*/
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  text-decoration: none;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+}
+
+.socialIcons a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.footerMenu {
+  margin: 30px 0;
+}
+
+.footerMenu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footerMenu ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerMenu ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+
+
+/*====================================================*/
+/*===                  owl-carousel                 ==*/
+/*====================================================*/
+
+
+
+.owl-theme .item {
+    height: 15rem;
+    background: #4dc7a0;
+    padding: 1rem;
+}
+  
+.owl-carousel .item h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4375rem;
+    margin-top: 0rem;
+}
+  
+
+
+/*====================================================*/
+/*===                   BreakPoint                   ==*/
+/*====================================================*/
+
+
+@media (max-width: 990px) {
+  /* header .menu ul li a {
+    padding: 30px 10px;
+  } */
+
+}
+
+@media (max-width: 690px) {
+
+  header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-out;
+  }
+
+  header .menu ul {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  header .menu ul li ul {
+    position: relative;
+  }
+
+  header .menu ul li a {
+    display: block;
+    margin: auto 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header .menuIcon {
+    display: flex;
+  }
+
+  .carousel {
+    padding-top: 80px;
+  }
+
+
+  /* nav #menuActive:checked ~ #overlay{
+    background: red;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 95;
+  } */
+
+}

@@ -1,0 +1,33 @@
+/*====================================================*/
+/*===                   about us                    ==*/
+/*====================================================*/
+
+
+.about-dt {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.about-dt p {
+    padding: 24px 24px 36px 24px;
+    line-height: 1.2;
+}
+
+
+.contact-dt {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.contact-dt p {
+    padding: 24px 24px 36px 24px;
+    line-height: 1.2;
+}
+
+

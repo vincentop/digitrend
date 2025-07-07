@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>DigiTrend - 擁抱數位狂潮 領導資訊趨勢</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="of01_v1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DigiTrend</h1>
+            <p>擁抱數位狂潮 領導資訊趨勢</p>
+        </div>
+
+        <div class="form-container">
+            <form>
+                <!-- 訂閱方案 -->
+                <div class="section">
+                    <h2 class="section-title">訂閱方案</h2>
+                    <div class="form-group">
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="plan1" name="subscribe-plan" value="1year" checked>
+                                <label for="plan1">訂閱1年4期 優惠價 <span class="price-highlight">NT$ 300</span></label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="plan2" name="subscribe-plan" value="2years">
+                                <label for="plan2">訂閱2年8期 優惠價 <span class="price-highlight">NT$ 600</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="section-title">寄送方式</h2>
+                    <div class="form-group">
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="delivery1" name="delivery" value="regular" checked>
+                                <label for="delivery1">限時專送</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="delivery2" name="delivery" value="registered">
+                                <label for="delivery2">掛號<span id="postage-text"></span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">起始訂閱年月</h2>
+                    <div class="form-group">
+                        <div class="subscription-period">
+                            <span>自</span>
+                            <select name="start-year">
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                            <span>年</span>
+                            <select name="start-month">
+                                <option value="1">1</option>
+                                <option value="4">4</option>
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                            </select>
+                            <span>月 開始訂閱</span>
+                        </div>
+                    </div>
+                    <div class="total-amount">
+                        <h3>總金額</h3>
+                        <p id="total-price">NT$0</p>
+                    </div>
+                    <div class="notice">
+                        <h4>注意事項</h4>
+                        <p>數位狂潮雜誌訂閱一年共四期，1、4、7、10月出刊，採限時專送。如需掛號需加付郵資（一年四期100元、兩年八期200元），請於訂閱刷卡或匯款時一併支付。</p>
+                    </div>
+
+
+                </div>
+
+                <!-- 付款方式 -->
+                <div class="section">
+                    <h2 class="section-title">付款方式</h2>
+                    <div class="form-group">
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="payment1" name="payment" value="bank" checked>
+                                <label for="payment1">銀行匯款</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="payment2" name="payment" value="credit">
+                                <label for="payment2">信用卡付款</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 匯款資料 -->
+                <div class="section" id="bank-transfer-section">
+                    <div class="bank-info">
+                        <h4>銀行匯款資訊</h4>
+                        <p><strong>分行：</strong>012 台北富邦銀行北投分行</p>
+                        <p><strong>戶名：</strong>華碩聯合科技股份有限公司</p>
+                        <p><strong>帳號：</strong>360102062996</p>
+                    </div>
+                    <h2 class="section-title">匯款資料</h2>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="order-date">訂購日期</label>
+                            <input type="date" id="order-date" name="order-date">
+                        </div>
+                        <div class="form-col">
+                            <label for="remittance-account">匯款帳戶</label>
+                            <input type="text" id="remittance-account" name="remittance-account" placeholder="請輸入帳戶後五碼" pattern="\d{5}" maxlength="5" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="remittance-date">匯款日期</label>
+                            <input type="date" id="remittance-date" name="remittance-date">
+                        </div>
+                        <div class="form-col">
+                            <label for="remittance-amount">匯款金額</label>
+                            <input type="text" id="remittance-amount" name="remittance-amount" placeholder="NT$" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 信用卡資料 -->
+                <div class="section" id="credit-card-section">
+                    <h2 class="section-title">信用卡簽帳資料</h2>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="card-number">信用卡卡號</label>
+                            <div class="card-number-wrapper">
+                                <input type="text" id="card-number" placeholder="0000-0000-0000-0000" maxlength="19">
+                                <span id="card-logo"></span>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="cardholder-name">持卡人姓名</label>
+                            <input type="text" id="cardholder-name" name="cardholder-name" placeholder="同信用卡">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label>有效期限</label>
+                            <div class="expiry-date">
+                                <select name="card-month">
+                                    <option value="" disabled selected>月份</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <span>/</span>
+                                <select name="card-year">
+                                    <option value="" disabled selected>年份</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label for="order-amount">訂購金額</label>
+                            <input type="text" id="order-amount" name="order-amount" placeholder="NT$" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 發票資訊 -->
+                <div class="section">
+                    <h2 class="section-title">發票資訊</h2>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="tax-id">統一編號</label>
+                            <input type="text" id="tax-id" name="tax-id" placeholder="如需統編請填寫">
+                        </div>
+                        <div class="form-col">
+                            <label for="invoice-title">發票抬頭</label>
+                            <input type="text" id="invoice-title" name="invoice-title">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="company-contact">公司聯絡人</label>
+                            <input type="text" id="company-contact" name="company-contact">
+                        </div>
+                        <div class="form-col">
+                            <label for="company-owner">公司負責人</label>
+                            <input type="text" id="company-owner" name="company-owner">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="company-address">公司營利地址</label>
+                            <input type="text" id="company-address" name="company-address">
+                        </div>
+                        <div class="form-col">
+                            <label for="company-phone">聯絡電話</label>
+                            <input type="tel" id="company-phone" name="company-phone">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收件人資料 -->
+                <div class="section">
+                    <h2 class="section-title">收件人資料</h2>
+                    <div class="form-group">
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="personal" name="subscription-type" value="personal" checked>
+                                <label for="personal">個人訂閱</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="company" name="subscription-type" value="company">
+                                <label for="company">公司訂閱</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="subscriber-name">訂購人</label>
+                            <input type="text" id="subscriber-name" name="subscriber-name">
+                        </div>
+                        <div class="form-col">
+                            <label for="subscriber-email">E-Mail</label>
+                            <input type="email" id="subscriber-email" name="subscriber-email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="subscriber-phone">聯絡電話</label>
+                            <input type="tel" id="subscriber-phone" name="subscriber-phone">
+                        </div>
+                        <div class="form-col">
+                            <label for="subscriber-mobile">手機</label>
+                            <input type="tel" id="subscriber-mobile" name="subscriber-mobile">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="recipient">收件單位/收件人</label>
+                            <input type="text" id="recipient" name="recipient">
+                        </div>
+                        <div class="form-col">
+                            <label for="recipient-address">收件地址</label>
+                            <input type="text" id="recipient-address" name="recipient-address" placeholder="含郵遞區號">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="print-section">
+            <div class="print-instruction">
+                <p>填寫完整資料後請點下方<strong>確認列印</strong>自行列印後傳真至 (02)2898-7427，或是E-mail至 Helen_Tseng@asus.com</p>
+                <p>若您使用匯款方式，請連同匯款收據一起傳真/ E-mail。</p>
+            </div>
+            <button type="button" class="print-btn" onclick="window.print()">確認列印</button>
+        </div>
+
+        <div class="contact-info">
+            <h4>聯絡資訊</h4>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>訂閱服務專線</strong><br>
+                    (02)2894-3447 分機23615
+                </div>
+                <div class="contact-item">
+                    <strong>服務時間</strong><br>
+                    週一~週五 AM 9:00~12:00<br>
+                    PM 1:30~5:30
+                </div>
+                <div class="contact-item">
+                    <strong>聯絡方式</strong><br>
+                    傳真：(02)2898-7427<br>
+                    E-mail：Helen_Tseng@asus.com
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: #6b7280;">
+                <strong>地址：</strong>台北市112北投區立德路15號 數位狂潮雜誌
+            </p>
+        </div>
+    </div>
+
+    <script src="of01_v1.js"></script>
+</body>
+
+</html>

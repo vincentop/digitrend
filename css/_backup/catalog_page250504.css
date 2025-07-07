@@ -1,0 +1,316 @@
+/* #wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+} */
+
+.catalogWrapper {
+    /* background-color: #fff2ff; */
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+/* #header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #6e6e73;
+}
+
+.nav-links a {
+    color: #06c;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #0071e3;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.sub1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.sub1 img {
+    width: 100px;
+    height: 133px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sub1 .word {
+    flex: 1;
+}
+
+.sub1 .word h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.chief {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.chief ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chief a {
+    color: #1d1d1f;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.chief a:hover {
+    color: #0071e3;
+}
+
+.sub {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.sub img {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.sub .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sub h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.sub p {
+    font-size: 16px;
+    color: #6e6e73;
+}
+
+.more,
+.edlink {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.more a,
+.edlink a {
+    color: #0071e3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.more a:hover,
+.edlink a:hover {
+    text-decoration: underline;
+}
+
+.free {
+    color: #86868b;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+/* RWD Breakpoints */
+@media (max-width: 1024px) {
+    #wrapper {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .sub1,
+    .chief,
+    .sub {
+        padding: 15px;
+    }
+
+    .sub1 img {
+        width: 80px;
+        height: 106px;
+    }
+
+    .sub1 .word h3 {
+        font-size: 18px;
+    }
+
+    .sub img {
+        width: 35%;
+        max-width: 300px;
+    }
+
+    .sub h4 {
+        font-size: 24px;
+    }
+
+    .sub p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        padding: 20px 10px;
+        gap: 25px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .sub1 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .sub1 img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .sub1 .word h3 {
+        font-size: 16px;
+    }
+
+    .sub,
+    .chief {
+        padding: 15px;
+    }
+
+    .sub {
+        flex-direction: column;
+    }
+
+    .sub img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .sub h4 {
+        font-size: 20px;
+    }
+
+    .sub p {
+        font-size: 14px;
+    }
+
+    .chief a {
+        font-size: 16px;
+    }
+
+    .more,
+    .edlink {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper {
+        padding: 15px 5px;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        font-size: 12px;
+    }
+
+    .sub1,
+    .chief,
+    .sub {
+        padding: 10px;
+    }
+
+    .sub1 .word h3 {
+        font-size: 14px;
+    }
+
+    .sub h4 {
+        font-size: 18px;
+    }
+
+    .sub p {
+        font-size: 13px;
+    }
+
+    .chief a {
+        font-size: 14px;
+    }
+
+    .more a,
+    .edlink a {
+        font-size: 14px;
+    }
+
+    .free {
+        font-size: 10px;
+    }
+}

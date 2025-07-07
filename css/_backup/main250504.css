@@ -1,0 +1,1106 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(carousel.css);
+@import url(main-minor.css);
+@import url(catalog_all.css);
+@import url(catalog_page.css);
+
+
+/*====================================================*/
+/*===                    主體                       ==*/
+/*====================================================*/
+
+body {
+  font-family: 'Tt Norms Pro', 'sans-serif';
+}
+
+
+/*====================================================*/
+/*===                    Section                    ==*/
+/*====================================================*/
+
+section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.sectionTitle h1 {
+  font-size: 2em;
+}
+
+/*====================================================*/
+/*===                    最新期數                    ==*/
+/*====================================================*/
+
+.latestIssue .latestIssueTitleTop,.latestIssueTitleBot h1 {
+  font-size: 2em;
+}
+
+
+.latestIssue {
+  /* background-color: #fff2ff; */
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.latestIssueImg {
+  /* background-color: #f1f1f1; */
+  margin-right: 40px;
+  /* width: 35%; */
+  padding: 1rem;
+  /* border-radius: 15px; */
+}
+
+.latestIssueImg img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  box-shadow: 3px 3px 8px rgb(0, 0, 0, 55%);
+}
+
+.latestIssueLink {
+  display: flex;
+  flex-direction: column;
+  /* width: 65%; */
+  /* background-color: #fff5f5; */
+}
+
+.latestIssueLink h2 {
+  padding: 20px 0;
+  font-size: 24px;
+  background-color: #f5f5f5;
+}
+
+.latestIssueTitle {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.latestIssueTitle .latestIssueTitleTop {
+  display: flex;
+  /* align-items: flex-end; */
+  /* width: 50%; */
+}
+
+.latestIssueTitle .latestIssueTitleBot {
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-between; */
+  /* width: 50%; */
+}
+
+.latestIssueTitle .latestIssueTitleBot h1 {
+  padding: 0 24px;
+}
+
+.latestIssueTitle .latestIssueTitleBot span {
+  font-size: 24px;
+}
+
+.latestIssueLink .latestIssueEbook {
+  display: flex;
+  /* background-color: #f5f5f5; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.latestIssueLink .latestIssueEbook li {
+  width: 25%;
+  /* background-color: #fdd7c1; */
+}
+
+.latestIssueLink .latestIssueEbook li a {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.latestIssueLink .latestIssueEbook li a:hover {
+  background-color: #f5f6f6;
+  color: #000000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.latestIssueLink .latestIssueEbook li img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 15px 15px;
+  box-shadow: 5px 3px 9px rgb(131, 131, 131, 0.3);
+}
+
+
+.latestIssueLink .latestIssueShop {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.latestIssueLink .latestIssueShop li a {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* padding: 6px; */
+}
+
+
+.latestIssueLink .latestIssueShop {
+  display: flex;
+  /* background-color: #f5f5f5; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.latestIssueLink .latestIssueShop li {
+  width: 25%;
+  /* background-color: #fdd7c1; */
+}
+
+.latestIssueLink .latestIssueShop li a {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.latestIssueLink .latestIssueShop li a:hover {
+  background-color: #f5f6f6;
+  color: #000000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.latestIssueLink .latestIssueShop li img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 15px 15px;
+  box-shadow: 5px 3px 9px rgb(131, 131, 131, 0.3);
+}
+
+
+
+/*====================================================*/
+/*===                     專題報導                   ==*/
+/*====================================================*/
+
+.sectionFeature {
+  background-color: #f5f6f6;
+}
+
+.feature {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.feature ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.feature ul li {
+  width: 31%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.feature ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 背景陰影效果 */
+}
+
+.feature .imgFit {
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+  border-radius: 15px 15px 0 0;
+  overflow: hidden; /* 防止圖片超出邊界 */
+  transition: transform 0.3s, box-shadow 0.3s; /* 動畫過渡效果 */
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s; /* 圖片放大的過渡效果 */
+}
+
+.feature img:hover {
+  transform: scale(1.05); /* 圖片放大效果 */
+}
+
+.feature h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.feature p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.feature .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* height: 100%; */
+}
+
+/*====================================================*/
+/*===                    特別企劃                    ==*/
+/*====================================================*/
+
+.sectionSpecial {
+  background-color: #fff;
+}
+
+.special {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.special ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.special ul li {
+  width: 48%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.special ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 背景陰影效果 */
+}
+
+.special .imgFit {
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+  border-radius: 15px 15px 0 0;
+  overflow: hidden; /* 防止圖片超出邊界 */
+  transition: transform 0.3s, box-shadow 0.3s; /* 動畫過渡效果 */
+}
+
+.special img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s; /* 圖片放大的過渡效果 */
+}
+
+.special img:hover {
+  transform: scale(1.05); /* 圖片放大效果 */
+}
+
+.special h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.special p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.special .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+}
+
+/*====================================================*/
+/*===                    封面故事                    ==*/
+/*====================================================*/
+
+.sectionCover {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* .cover {
+  background: url(../images/cover_story/cover_story_077.jpg)center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+.cover a {
+  text-decoration: none;
+}
+
+.cover .coverOpacity {
+  background-color: #ffffff2a;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cover .coverTextBar {
+  background-image: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.01));
+}
+
+.cover .coverText {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 80px 40px 80px;
+}
+
+.cover .coverText h1 {
+  line-height: 2;
+  font-size: 2em;
+}
+
+.cover .coverText p {
+  font-weight: 700;
+  line-height: 1.3;
+  /* letter-spacing:-0.03em; */
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+
+/*====================================================*/
+/*===                    數位生活                    ==*/
+/*====================================================*/
+
+.sectionDigital {
+  background-color: #f5f6f6;
+}
+
+.digital {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.digital ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.digital ul li {
+  width: 31%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.digital .imgFit {
+  height: 100%;
+  /* width: 100%; */
+  /* object-fit: cover; */
+}
+
+.digital img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.digital h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.digital p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.digital .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+
+/*====================================================*/
+/*===                   品味設計                     ==*/
+/*====================================================*/
+
+.sectionDesign {
+  background-color: #ffffff;
+}
+
+.design {
+  padding-left: 80px;
+  padding-right: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.design ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.design ul li {
+  width: 48%;
+  border-radius: 15px 15px;
+  box-shadow: 5px 1px 10px rgb(131, 131, 131, 0.2);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.design .imgFit {
+  height: 100%;
+}
+
+.design img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.design h4 {
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-bottom: 20px;
+  height: 52px;
+}
+
+.design p {
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.design .textFit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 0 0 15px 15px;
+  /* height: 100%; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+/*====================================================*/
+/*===                    各期雜誌                    ==*/
+/*====================================================*/
+
+.sectionReleaseIssue {
+  background-color: #f5f6f6;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  background-image: linear-gradient(0deg, #88b9cf, rgba(255, 255, 255, 0.01));
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.releaseIssueTitle {
+  text-align: center;
+}
+
+.owl-carousel {
+  margin-top: 48px;
+}
+
+.owl-theme .item {
+  background: #f4f5f5;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.owl-carousel .item img {
+  box-shadow: 5px 3px 9px rgb(131, 131, 131, 0.3);
+}
+
+.releaseIssueMore {
+  text-align: right;
+}
+
+.releaseIssueMore a {
+  color: #fff;
+}
+
+/*====================================================*/
+/*===                    Footer                     ==*/
+/*====================================================*/
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background-color: #3d3c41;
+}
+
+footer .footerTopLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+footer .footerTopLeft a {
+  color: white;
+  /* margin: 20px; */
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+footer .footerTopLeft a:hover {
+  opacity: 1;
+}
+
+footer .footerTopRight {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+footer .footerTopRight .facebookIcons {
+  margin-bottom: 30px;
+}
+
+
+footer .footerTopRight .facebookIcons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  text-decoration: none;
+  background-color: white;
+  /* margin-bottom: 30px; */
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+}
+
+footer .footerTopRight .facebookIcons a:hover {
+  background-color: #1877f2;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+
+footer .enLogo img {
+  /* width: 150px; */
+}
+
+footer .footerBottom {
+  background-color: #323136;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footerBottom p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+footer .footerBottom span {
+  padding: 0 4px;
+}
+
+/*====================================================*/
+/*===                  回到頂端按鈕                  ==*/
+/*====================================================*/
+
+#backToTopBtn {
+  display: none;
+  /* 預設隱藏 */
+  position: fixed;
+  /* 固定位置 */
+  bottom: 20px;
+  /* 距離底部20px */
+  right: 20px;
+  /* 距離右側20px */
+  z-index: 199;
+  /* 保證按鈕在最上層 */
+  border: none;
+  /* 無邊框 */
+  outline: none;
+  /* 無外框 */
+  background-color: rgba(0, 84, 240, 0.3);
+  /* 按鈕背景色 */
+  color: white;
+  /* 按鈕文字顏色 */
+  cursor: pointer;
+  /* 鼠標移上去顯示為指針 */
+  padding: 15px;
+  /* 按鈕內邊距 */
+  border-radius: 10px;
+  /* 圓角 */
+  font-size: 18px;
+  /* 字體大小 */
+}
+
+#backToTopBtn:hover {
+  background-color: rgba(0, 29, 82, 0.3);
+  /* 鼠標移上去的背景色 */
+}
+
+
+
+/*====================================================*/
+/*===                   BreakPoint                  ==*/
+/*====================================================*/
+
+@media (max-width: 1200px) {
+
+  /*====== latestIssue ======*/
+  .latestIssueLink .latestIssueEbook li {
+    width: 33.3%;
+  }
+
+  .latestIssueLink .latestIssueShop li {
+    width: 33.3%;
+  }
+}
+
+
+
+@media (max-width: 1100px) {
+
+  /*====== latestIssue ======*/
+  .latestIssueTitle {
+    flex-direction: column;
+  }
+
+  .latestIssueTitle .latestIssueTitleTop {
+    padding-bottom: 12px;
+  }
+
+  .latestIssueTitle .latestIssueTitleBot h1 {
+    padding:0 24px 0 0;
+  }
+
+  .latestIssueImg {
+    width: 50%;
+  }
+
+  .latestIssueLink {
+    width: 50%;
+  }
+
+  .latestIssueLink .latestIssueEbook li {
+    width: 50%;
+  }
+
+  .latestIssueLink .latestIssueShop li {
+    width: 50%;
+  }
+}
+
+
+
+
+
+@media (max-width: 960px) {
+
+  /*====== feature ======*/
+  .sectionFeature .feature ul li {
+    width: 48%;
+  }
+
+  .sectionFeature .feature ul li:nth-child(1) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /*====== Special ======*/
+  .sectionSpecial .special ul {
+    flex-direction: column;
+  }
+
+  .sectionSpecial .special ul li {
+    width: 100%;
+  }
+
+  .sectionSpecial .special ul li:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  /*====== Digital ======*/
+  .sectionDigital .digital ul li {
+    width: 48%;
+  }
+
+  .sectionDigital .digital ul li:nth-child(1) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /*====== Design ======*/
+  .sectionDesign .design ul {
+    flex-direction: column;
+  }
+
+  .sectionDesign .design ul li {
+    width: 100%;
+  }
+
+  .sectionDesign .design ul li:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  /*====== latestIssue ======*/
+  .latestIssue {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latestIssueTitle {
+    align-items: center;
+  }
+
+  .latestIssueImg {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .latestIssueLink {
+    width: 60%;
+  }
+
+  .latestIssueLink h2 {
+    text-align: center;
+  }
+
+}
+
+
+
+@media (max-width: 796px) {
+
+  /*====== latestIssue ======*/
+  .latestIssueImg {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .latestIssueLink {
+    width: 80%;
+  }
+  
+}
+
+
+
+
+@media (max-width: 690px) {
+
+  /*====== Header ======*/
+  header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: .3s ease-out;
+  }
+
+  header .menu ul {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  header .menu ul li ul {
+    position: relative;
+  }
+
+  header .menu ul li a {
+    display: block;
+    margin: auto 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header .menuIcon {
+    display: flex;
+  }
+
+  header .navigationBar {
+    padding: 0 20px 0 20px;
+  }
+
+  .carousel {
+    padding-top: 80px;
+  }
+
+  /*====== Feature ======*/
+  .sectionFeature .feature ul li {
+    width: 100%;
+  }
+
+  .sectionFeature .feature ul li:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  /*====== Digital ======*/
+  .sectionDigital .digital ul li {
+    width: 100%;
+  }
+
+  .sectionDigital .digital ul li:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+    /*====== latestIssue ======*/
+    .latestIssueImg {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .latestIssueLink {
+      width: 90%;
+    }
+
+  /* nav #menuActive:checked ~ #overlay{
+    background: red;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 95;
+  } */
+}
+
+
+
+@media (max-width: 520px) {
+  .feature {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .special {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .digital {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .design {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /*====== latestIssue ======*/
+  .latestIssue {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+
+
+@media (max-width: 450px) {
+  footer .footerTop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footerTopLeft {
+    align-items: center;
+    height: 120px;
+    justify-content: space-around;
+  }
+
+  footer .footerTopRight {
+    align-items: center;
+  }
+
+  footer .footerTopRight .facebookIcons {
+    margin-top: 30px;
+  }
+
+  footer .footerBottom p span {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*====== latestIssue ======*/
+  .latestIssueImg {
+    padding: initial;
+  }
+  
+  .latestIssueTitle .latestIssueTitleBot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latestIssueTitle .latestIssueTitleBot h1 {
+    margin: 0 auto;
+    padding: 0 0 12px 0;
+  }
+
+  .latestIssueLink {
+    width: 100%;
+  }
+
+  .latestIssueLink .latestIssueEbook li img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 10px 10px;
+  }
+
+  .latestIssueLink .latestIssueShop li img {
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 10px 10px;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+
+  /*====== latestIssue ======*/
+  .latestIssueTitle .latestIssueTitleTop {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .latestIssueLink .latestIssueEbook li {
+    width: 100%;
+    /* padding-left: 48px; */
+  }
+
+  .latestIssueLink .latestIssueEbook li a {
+    padding: 12px 12px 12px 60px;
+  }
+
+  .latestIssueLink .latestIssueShop li {
+    width: 100%;
+    /* padding-left: 48px; */
+  }
+
+  .latestIssueLink .latestIssueShop li a {
+    padding: 12px 12px 12px 60px;
+  }
+
+}
+
+
+
+@media (max-width: 325px) {
+
+  /*====== latestIssue ======*/
+  .latestIssueLink .latestIssueEbook li a {
+    padding: 12px 12px 12px 24px;
+  }
+
+  .latestIssueLink .latestIssueShop li a {
+    padding: 12px 12px 12px 24px;
+  }
+}

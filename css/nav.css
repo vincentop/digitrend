@@ -39,7 +39,7 @@ header .logo {
 
 header .logo a {
     display: block;
-    background: url(/images/logo/digitrend/digitrend_logo.svg) no-repeat;
+    /* background: url(//images/logo/digitrend/digitrend_logo.svg) no-repeat; */
     width: 176px;
     height: 40px;
     background-size: contain;
